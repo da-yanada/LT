@@ -90,8 +90,7 @@ Shiftを押しながらだと選択しながら。
 ## コードスニペット
 頻繁に使う記述をテンプレート化して自動補完することができる
 
-![2018-04-13 10 18 04](https://user-images.githubusercontent.com/28851703/38712013-ff9a8e50-3f03-11e8-8e54-8ffd3f87bbf4.png)
-
+![switch_sni](https://user-images.githubusercontent.com/28851703/40350912-15199158-5de6-11e8-9442-7eb677ab582f.gif)
 
 ![2018-04-13 10 16 02](https://user-images.githubusercontent.com/28851703/38711991-d9b7ad30-3f03-11e8-8c90-b20d8ba5677b.png)
 
