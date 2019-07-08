@@ -1,6 +1,6 @@
 ### なぜ今更
 https://applech2.com/archives/20190604-zsh-as-the-default-shell-on-macos-10-15-catalina.html  
-次のMAC OS catalinaからデフォルトがzshになるらしいので  
+次のMAC OS catalinaからデフォルトがzshになるから  
 (新規ユーザのみで既存ユーザは変わらないけどmacユーザ貫く予定なので)
 
 bash
