@@ -24,6 +24,7 @@ https://applech2.com/archives/20190604-zsh-as-the-default-shell-on-macos-10-15-c
 - もともとこう変更してた
   - `[18:05:46]yanada: ~/$`
   - やり方は、PS1=`[\t]yanada: \w/$`  
+    PS1という環境変数を書き換えると変わる。  
      `\t`で今の時間 `\w`でカレントディレクトリのフルパス  
      `[今の時間]yanada: フルパス$ `と言った感じ
      
