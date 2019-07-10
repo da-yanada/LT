@@ -29,7 +29,8 @@ https://applech2.com/archives/20190604-zsh-as-the-default-shell-on-macos-10-15-c
 でもzshにすると、そのまま`[\t]yanada: \w/$`という文字列で表示されてしまったので  
 zshに対応した書き方に変更  
 
-変更後 → PS1=`[%*]yanada: %~/$ `  
+* 変更後 → PS1=`[%*]yanada: %~/$ `  
+
 この変更を.zshrcにも反映。
 
 これで今まで通り`[18:05:46]yanada: ~/$`になった
