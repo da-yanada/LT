@@ -1,7 +1,7 @@
 # bashからzshに(今更)乗り換えた話
 
 ## なぜ今更
-次のMAC OS catalinaからデフォルトがzshになるから  
+次のMAC OS catalinaからデフォルトがzshになるらしいので、そろそろ変えようかなと  
 (新規ユーザのみで既存ユーザは変わらない)
 
 https://applech2.com/archives/20190604-zsh-as-the-default-shell-on-macos-10-15-catalina.html  
@@ -15,7 +15,11 @@ https://applech2.com/archives/20190604-zsh-as-the-default-shell-on-macos-10-15-c
 - `chsh -s /usr/local/bin/zsh`
 
 #### zsh用のrcファイルを作成、.bashrcにaliasなど書いていたので、全てそのままコピー
+- `cat ~/.bash_profile >> ~.zshrc`
 - `cat ~/.bashrc >> ~/.zshrc`
+
+
+
 
 #### コマンドラインの左に表示されるところを編集
 - MACのデフォルト `ユーザー名noMacbook:~ ユーザー名$ `
@@ -32,6 +36,7 @@ https://applech2.com/archives/20190604-zsh-as-the-default-shell-on-macos-10-15-c
 zshに対応した書き方に変更  
 
 変更後　→ PS1=`[%*]yanada: %~/$ `  
+この変更を.zshrcにも反映。
 
 これで今まで通り`[18:05:46]yanada: ~/$`になった
 
