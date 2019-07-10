@@ -16,11 +16,6 @@ https://applech2.com/archives/20190604-zsh-as-the-default-shell-on-macos-10-15-c
 
 #### zsh用のrcファイルを作成、.bashrcにaliasなど書いていたので、全てそのままコピー
 - `cat ~/.bashrc >> ~/.zshrc`
-bash
-PS1=`[\t]yanada: \w/$`
-
-zsh
-
 
 #### コマンドラインの左に表示されるところを編集
 - MACのデフォルト `ユーザー名noMacbook:~ ユーザー名$ `
