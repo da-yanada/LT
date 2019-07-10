@@ -80,7 +80,7 @@ checkout-index   -- copy files from index to working directory
 cherry           -- find commits not merged upstream
 cherry-pick      -- apply changes introduced by some existing commits
 ```
-checkoutの綴りをど忘れしてもこれですぐ補完できる上にtabだけで補完もしてくれる
+checkoutの綴りをど忘れしてもこれですぐ表示できる上にtabだけで補完もしてくれる
 
 #### chshでログインシェルを変更
 - `chsh -s /usr/local/bin/zsh`
