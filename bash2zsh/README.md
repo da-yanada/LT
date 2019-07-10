@@ -112,3 +112,4 @@ zshのうまい使い方教えてください。
 ### この辺みた
 https://qiita.com/yamagen0915/items/77fb78d9c73369c784da
 https://gist.github.com/d-kuro/352498c993c51831b25963be62074afa
+https://qiita.com/munazo/items/fa010d9815a04578658c
