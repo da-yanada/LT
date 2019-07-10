@@ -4,7 +4,9 @@
 次のMAC OS catalinaからデフォルトがzshになるらしいので、そろそろ変えようかなと  
 (新規ユーザのみで既存ユーザは変わらない)
 
-https://applech2.com/archives/20190604-zsh-as-the-default-shell-on-macos-10-15-catalina.html  
+Catalinaの詳細はここが詳しく書いてくれている  
+https://applech2.com/archives/20190604-macos-10-15-catalina.html   
+itunesがなくなるのとか結構衝撃
 
 ## やった手順
 ### インストール
