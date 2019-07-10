@@ -8,6 +8,14 @@ Catalinaの詳細はここが詳しく書いてくれている
 https://applech2.com/archives/20190604-macos-10-15-catalina.html   
 itunesがなくなるのとか結構衝撃
 
+## zshとは
+shellの一つ
+
+bourne　shell系コマンドとcsh系のコマンドが両方使える上に、ksh系のコマンドライン編集機能も実装された究極のシェル。  
+らしい。  
+
+とにかくコマンドライン作業を快適に操作できるshell
+
 ## やった手順
 ### インストール
 持っているMAC OSには元から入ってました
