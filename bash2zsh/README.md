@@ -11,29 +11,25 @@ https://applech2.com/archives/20190604-zsh-as-the-default-shell-on-macos-10-15-c
 持っているMAC OSには元から入ってました
 
 ### 設定
-
 #### zsh用のrcファイルを作成、.bashrcにaliasなど書いていたので、全てそのままコピー
 - `cat ~/.bash_profile >> ~.zshrc`
 - `cat ~/.bashrc >> ~/.zshrc`
-
-
 
 
 #### コマンドラインの左に表示されるところを編集
 - MACのデフォルト `ユーザー名noMacbook:~ ユーザー名$ `
   - noMacbookとかいらない。
   - カレントディレクトリしか出なくてたまにどこにいるか分からなくなる
-- もともとこう変更してた
+- もともとこう変更してた(PS1という環境変数を書き換えると変わる。)
   - `[18:05:46]yanada: ~/$`
-  - やり方は、PS1=`[\t]yanada: \w/$`  
-    PS1という環境変数を書き換えると変わる。  
+  - 内容は、PS1=`[\t]yanada: \w/$`  
      `\t`で今の時間 `\w`でカレントディレクトリのフルパス  
      `[今の時間]yanada: フルパス$ `と言った感じ
      
 でもzshにすると、そのまま`[\t]yanada: \w/$`という文字列で表示されてしまったので  
 zshに対応した書き方に変更  
 
-変更後　→ PS1=`[%*]yanada: %~/$ `  
+変更後 → PS1=`[%*]yanada: %~/$ `  
 この変更を.zshrcにも反映。
 
 これで今まで通り`[18:05:46]yanada: ~/$`になった
@@ -58,6 +54,32 @@ setopt hist_ignore_dups
 # 開始と終了を記録
 setopt EXTENDED_HISTORY
 ```
+
+
+#### 補完機能を有効にする
+```
+# 補完機能有効にする
+autoload -U compinit
+compinit -u
+```
+
+これで、コマンドを打った後の補完機能が有効になる  
+例えば  
+`git che`と打った後にTabを押すと、gitコマンドの中のcheから始まるコマンド一覧が表示され  
+もう1度Tabを押すと補完してくれる
+
+```
+[11:03:28]yanada: ~/$ git che
+check-attr       -- display gitattributes information
+check-ignore     -- debug gitignore/exclude files
+check-mailmap    -- show canonical names and email addresses of contacts
+check-ref-format -- ensure that a reference name is well formed
+checkout         -- checkout branch or paths to working tree
+checkout-index   -- copy files from index to working directory
+cherry           -- find commits not merged upstream
+cherry-pick      -- apply changes introduced by some existing commits
+```
+checkoutの綴りをど忘れしてもこれですぐ補完できる上にtabだけで補完もしてくれる
 
 #### chshでログインシェルを変更
 - `chsh -s /usr/local/bin/zsh`
