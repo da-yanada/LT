@@ -50,7 +50,7 @@ zshに対応した書き方に変更
 #### historyを残すように設定
 bashだと、今までは↑キーを押して直近のコマンドを出したり  
 historyコマンドで過去のコマンドの履歴を表示したり出来たが  
-zshだと設定をしないと出来ないらしいので.zshrcに追加
+zshだと設定をしないと出来ないらしいので以下を.zshrcに追加
 ```
 # 履歴ファイルの保存先
 export HISTFILE=${HOME}/.zsh_history
@@ -72,8 +72,8 @@ setopt EXTENDED_HISTORY
 #### 補完機能を有効にする
 ```
 # 補完機能有効にする
-autoload -U compinit
-compinit -u
+echo "autoload -U compinit" >> ~/.zshrc
+echo "compinit -u " >> ~/.zshrc
 ```
 
 これで、コマンドを打った後の補完機能が有効になる  
@@ -93,6 +93,17 @@ cherry           -- find commits not merged upstream
 cherry-pick      -- apply changes introduced by some existing commits
 ```
 checkoutの綴りをど忘れしてもこれですぐ表示できる上にtabだけで補完もしてくれる
+
+#### コマンド訂正機能を有効にする
+`echo "setopt correct" >> ~/.zshrc`
+コマンドのタイプミスをした際に、似たコマンドをサジェストしてくれる。  
+その後yを入力するとサジェストされたコマンドを実行できる
+
+#### 移動したディレクトリを記録しておく。"cd -[Tab]"で移動履歴を一覧
+`echo "setopt auto_pushd" >> ~/.zshrc`
+
+cdの履歴を覚えてくれる。  
+cd -[Tab]と押すと一覧表示される。超便利
 
 #### chshでログインシェルを変更
 - `chsh -s /usr/local/bin/zsh`
