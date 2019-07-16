@@ -20,7 +20,7 @@ bourne　shell系コマンドとcsh系のコマンドが両方使える上に、
 ### インストール
 持っているMAC OSには元から入ってました
 
-入っていない人は  
+入っていない場合は  
 `brew install zsh`  
 `echo /usr/local/bin/zsh >> /etc/shells`
 
