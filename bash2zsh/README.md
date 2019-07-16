@@ -20,6 +20,10 @@ bourne　shell系コマンドとcsh系のコマンドが両方使える上に、
 ### インストール
 持っているMAC OSには元から入ってました
 
+入っていない人は  
+`brew install zsh`  
+`echo /usr/local/bin/zsh >> /etc/shells`
+
 ### 設定
 #### zsh用のrcファイルを作成、.bashrcにaliasなど書いていたので、全てそのままコピー
 - `cat ~/.bash_profile >> ~.zshrc`
