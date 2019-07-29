@@ -100,7 +100,7 @@ cherry-pick      -- apply changes introduced by some existing commits
 checkoutの綴りをど忘れしてもこれですぐ表示できる上にtabだけで補完もしてくれる
 
 #### コマンド訂正機能を有効にする
-`echo "setopt correct" >> ~/.zshrc`
+`echo "setopt correct" >> ~/.zshrc`  
 コマンドのタイプミスをした際に、似たコマンドをサジェストしてくれる。  
 その後yを入力するとサジェストされたコマンドを実行できる
 
