@@ -21,7 +21,11 @@ bourne shell系コマンドとcsh系のコマンドが両方使える上に、ks
 持っているMacには元から入ってました
 
 入っていない場合は  
-`brew install zsh`  
+* mac
+   - `brew install zsh`  
+* linux 
+   - `sudo yum -y install zsh`
+
 `echo /usr/local/bin/zsh >> /etc/shells`
 
 ### 設定
