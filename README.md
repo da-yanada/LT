@@ -1,6 +1,6 @@
 ## LT用
 
-|日付|内容|
+|いつ|どんな|
 |---|---|
 |2018/04/13|[Xcodeの覚えていると便利なショートカット](XcodeShortCut/Xcode_ShortCuts.md)|
 |2018/05/18|[ハイブリッドアプリを触ってみた](HybridApp/hybridApp.md)|
