@@ -30,7 +30,7 @@ bourne shell系コマンドとcsh系のコマンドが両方使える上に、ks
 
 ### 設定
 #### zsh用のrcファイルを作成、.bashrcにaliasなど書いていたので、全てそのままコピー
-- `cat ~/.bash_profile >> ~.zshrc`
+- `cat ~/.bash_profile >> ~/.zshrc`
 - `cat ~/.bashrc >> ~/.zshrc`
 
 
